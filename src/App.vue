@@ -1,22 +1,24 @@
 <template>
 <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <HelloWorld :msg="text" />
 </div>
 </template>
 
 <script>
-import {faq} from "../config.js"
+import {
+    faq
+} from "../config.js"
 import HelloWorld from "./components/HelloWorld.vue";
 import axios from "axios";
 import * as d3 from "d3-dsv";
 
 export default {
     name: "App",
-    data: function() {
-      return {
-        text: []
-      }
+    data: function () {
+        return {
+            text: []
+        }
     },
     components: {
         HelloWorld
@@ -41,10 +43,28 @@ export default {
             return axios.all([requestOne]).then(axios.spread((...responses) => {
                 const responseOne = responses[0]
                 var responseData = d3.csvParse(responseOne.data);
+
+                // cleaning
+                for (let i = 0; i < responseData.length; i++) {
+                    for (var k in responseData[i]) {
+                        // if (responseData[i].hasOwnProperty(k)) {
+                        // console.log("Key is " + k + ", value is: " + dataLayer1[i][k]);
+                        // the csv source from google introduces \' so we remove the backslash:
+                        responseData[i][k] = responseData[i][k].replace(/\\'/g, "‘");
+                        //experimental:
+                        responseData[i][k] = responseData[i][k].replace(/'/g, "‘");
+                        // responseData[i][k] = responseData[i][k].replace(/(\n\n)/gm, "</p><p>");
+                        responseData[i][k] = responseData[i][k].trim();
+                        // console.log('responseData[i][k]: ', responseData[i][k]);
+                        // }
+                    }
+                }
+
                 this.text = responseData
                 console.log('this.text: ', this.text);
+
                 // console.log('tst: ', this.text[2]);
-                
+
                 // console.log('this.text: ', this.text.data);
                 // use/access the results 
 
