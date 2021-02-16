@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+live.sh
 
 
 # local env files
@@ -22,3 +23,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 .history/
+
+# Bootstrap template
+public/assets
