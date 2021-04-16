@@ -7,13 +7,18 @@
             <div class="" :id="'heading' + index">
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" style="text-transform: none;" type="button" data-toggle="collapse" :data-target="'#collapse' + index" aria-expanded="false" :aria-controls="'collapse' + index">
-                        {{item["'Short"]}} <span class="read-more" style="position: absolute; right: 0; bottom: 0; line-height: 1; font-size: 2em;">+</span>
+                        <vue-markdown>
+                            {{item["'Short"]}}
+                        </vue-markdown>
+                        <span class="read-more" style="position: absolute; right: 0; bottom: 0; line-height: 1; font-size: 2em;">+</span>
                     </button>
                 </h2>
             </div>
             <div :id="'collapse'+ index" class="collapse p-5 text-left" aria-labelledby="'heading' + index" data-parent="#accordionExample">
                 <div class="">
-                    {{item.Long}}
+                    <vue-markdown>
+                        {{item.Long}}
+                    </vue-markdown>
                 </div>
             </div>
         </div>
@@ -23,8 +28,12 @@
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown';
 export default {
     name: "HelloWorld",
+    components: {
+        VueMarkdown
+    },
     data: function () {
         return {
             counter: 0
@@ -45,6 +54,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang="scss" scoped>
+
+
 h3 {
     margin: 40px 0 0;
 }
@@ -64,6 +75,6 @@ a {
 }
 
 button[aria-expanded="true"] span {
-  display: none;
+    display: none;
 }
 </style>
