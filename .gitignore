@@ -2,6 +2,10 @@
 node_modules
 /dist
 live.sh
+live.*.sh
+vue.config.*.js
+config.*.js
+index.*.html
 
 
 # local env files
@@ -26,3 +30,4 @@ pnpm-debug.log*
 
 # Bootstrap template
 public/assets
+
