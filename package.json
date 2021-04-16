@@ -14,7 +14,8 @@
     "d3-dsv": "^2.0.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
