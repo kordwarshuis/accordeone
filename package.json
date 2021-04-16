@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "babel-runtime": "^6.26.0",
     "bootstrap": "^4.6.0",
     "core-js": "^3.10.1",
     "d3-dsv": "^2.0.0",
