@@ -96,4 +96,21 @@ export default {
     color: #2c3e50;
     margin-top: 60px;
 }
+
+p {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.05em;
+    color: #111;
+}
+
+button p {
+    font-weight: bold;
+}
+
+a {
+    font-weight: bold;
+    color: rgb(18, 109, 245) !important;
+    text-decoration: underline;
+}
+
 </style>
