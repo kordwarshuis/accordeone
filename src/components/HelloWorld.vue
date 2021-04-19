@@ -39,10 +39,18 @@ export default {
             counter: 0
         }
     },
+    mounted() {
+        this.openFirstAccordeonItem();
+    },
     methods: {
         incrementCounter() {
             this.counter++;
             return this.counter;
+        },
+        openFirstAccordeonItem() {
+            setTimeout(() => {
+                document.querySelector('#collapse0').classList.add('show');
+            }, 1000);
         }
     },
     props: {
