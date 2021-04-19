@@ -17,9 +17,9 @@ Result:
 https://docs.google.com/spreadsheets/d/e/2PACX-1vTPU9zK7WzRdtx58zhdMFrHKVmWxfG-2Y6dz68QDcP-Q8H3mIPRbiw1dueu_Bzgo88oJifq3A8QpbtI/pub?gid=0&single=true&output=csv
 ```
 
-<img src="./images/publ-to-web-1.png" alt="Publish to weg menu item under File" border="0" width="300">
-<img src="./images/publ-to-web-2.png" alt="Setting of the publishing" border="0" width="300">
-<img src="./images/publ-to-web-3.png" alt="OK to commit the setting of the publishing" border="0" width="300">
-<img src="./images/publ-to-web-4.png" alt="Copy the url" border="0" width="300">
+<img src="./images/publ-to-web-1.png" alt="Publish to weg menu item under File" border="0" width="100">
+<img src="./images/publ-to-web-2.png" alt="Setting of the publishing" border="0" width="400">
+<img src="./images/publ-to-web-3.png" alt="OK to commit the setting of the publishing" border="0" width="400">
+<img src="./images/publ-to-web-4.png" alt="Copy the url" border="0" width="400">
 
 
