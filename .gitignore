@@ -4,6 +4,7 @@ node_modules
 live.sh
 live.*.sh
 vue.config.*.js
+vue.config.js
 config.*.js
 index.*.html
 
