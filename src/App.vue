@@ -27,10 +27,10 @@ export default {
         fetchData() {
             // LIVE
             let one = window.location.protocol + "//" + window.location.host + window.location.pathname + "data/content.php";
-            
+
             // TESTING
-            // let one = "https://blockchainbird.org/a/test/test2/data/content.php";
-            
+            // let one = "https://blockchainbird.org/a/keri/data/content.php";
+
             const requestOne = axios.get(one);
 
             // https://www.storyblok.com/tp/how-to-send-multiple-requests-using-axios
@@ -83,12 +83,15 @@ p {
 }
 
 button p {
-    -webkit-user-select: all;   -moz-user-select: text;   -ms-user-select: text;   user-select: text;
+    -webkit-user-select: all;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
-button p {
-    font-weight: bold;
-}
+// button p {
+    // font-weight: bold;
+// }
 
 a {
     font-weight: bold;
@@ -99,5 +102,4 @@ a {
 strong {
     font-weight: bolder !important;
 }
-
 </style>
