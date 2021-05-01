@@ -1,0 +1,10 @@
+
+#!/bin/bash
+####################
+# to make php includes work, the standard VUE index file should become a php file:
+mv index.html index.php
+
+####################
+# COPY TO LIVE SERVER
+# adding --progress option to rsync command will output progress to screen
+rsync -vurt ./. username@domain.com:path/to/accordeone/
