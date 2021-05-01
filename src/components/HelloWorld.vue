@@ -8,7 +8,7 @@
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" style="text-transform: none;" type="button" data-toggle="collapse" :data-target="'#collapse' + index" aria-expanded="false" :aria-controls="'collapse' + index">
                         <vue-markdown>
-                            {{item["'Short"]}}
+                            {{item["Short"]}}
                         </vue-markdown>
                         <span class="read-more" style="position: absolute; right: 0; bottom: 0; line-height: 1; font-size: 2em;">+</span>
                     </button>
