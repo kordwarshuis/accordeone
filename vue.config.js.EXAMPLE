@@ -1,6 +1,0 @@
-module.exports = {
-  // remove EXAMPLE from filename
-  // /PATH/TO/LIVE-DIRECTORY/ example: /a/keri/
-  publicPath: process.env.NODE_ENV === 'production' ? '/PATH/TO/LIVE-DIRECTORY/' : '/',
-  lintOnSave: false
-};
