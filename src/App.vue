@@ -1,14 +1,10 @@
 <template>
 <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <HelloWorld :msg="text" />
 </div>
 </template>
 
 <script>
-import {
-    faq
-} from "../config.js"
 import HelloWorld from "./components/HelloWorld.vue";
 import axios from "axios";
 import * as d3 from "d3-dsv";
@@ -29,14 +25,12 @@ export default {
 
     methods: {
         fetchData() {
-            // var that = this;
-
-            // only fetch data
-            // if (this.$store.state.dataFetched === false) {
-
-            console.log('faq.source: ', faq.source);
-            let one = faq.source;
-
+            // LIVE
+            let one = window.location.protocol + "//" + window.location.host + window.location.pathname + "data/content.php";
+            
+            // TESTING
+            // let one = "https://blockchainbird.org/a/test/test2/data/content.php";
+            
             const requestOne = axios.get(one);
 
             // https://www.storyblok.com/tp/how-to-send-multiple-requests-using-axios
@@ -50,9 +44,9 @@ export default {
                         // if (responseData[i].hasOwnProperty(k)) {
                         // console.log("Key is " + k + ", value is: " + dataLayer1[i][k]);
                         // the csv source from google introduces \' so we remove the backslash:
-                        responseData[i][k] = responseData[i][k].replace(/\\'/g, "‘");
+                        // responseData[i][k] = responseData[i][k].replace(/\\'/g, "‘");
                         //experimental:
-                        responseData[i][k] = responseData[i][k].replace(/'/g, "‘");
+                        // responseData[i][k] = responseData[i][k].replace(/'/g, "‘");
                         // responseData[i][k] = responseData[i][k].replace(/(\n\n)/gm, "</p><p>");
                         responseData[i][k] = responseData[i][k].trim();
                         // console.log('responseData[i][k]: ', responseData[i][k]);
@@ -61,21 +55,6 @@ export default {
                 }
 
                 this.text = responseData
-                console.log('this.text: ', this.text);
-
-                // console.log('tst: ', this.text[2]);
-
-                // console.log('this.text: ', this.text.data);
-                // use/access the results 
-
-                // 1: the scores data
-                // var tweetedCards = [];
-                // var tweetedCardsFlat = [];
-
-                // 2: the cards data
-                // var responseData = d3.csvParse(responseOne.data);
-                // var responseDataTemp = [];
-
             })).catch(errors => {
                 // react on errors.
                 console.log('errors: ', errors);
@@ -104,6 +83,10 @@ p {
 }
 
 button p {
+    -webkit-user-select: all;   -moz-user-select: text;   -ms-user-select: text;   user-select: text;
+}
+
+button p {
     font-weight: bold;
 }
 
@@ -111,6 +94,10 @@ a {
     font-weight: bold;
     color: rgb(18, 109, 245) !important;
     text-decoration: underline;
+}
+
+strong {
+    font-weight: bolder !important;
 }
 
 </style>
