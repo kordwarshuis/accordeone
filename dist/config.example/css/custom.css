@@ -1,0 +1,32 @@
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+p {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.05em;
+  color: #111;
+}
+
+button p {
+  -webkit-user-select: all;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(18, 109, 245) !important;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bolder !important;
+}
