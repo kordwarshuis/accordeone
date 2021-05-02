@@ -29,7 +29,7 @@ export default {
             let one = window.location.protocol + "//" + window.location.host + window.location.pathname + "data/content.php";
 
             // TESTING
-            // let one = "https://blockchainbird.org/a/keri/data/content.php";
+            // let one = "https://blockchainbird.org/a/gordianseal/data/content.php";
 
             const requestOne = axios.get(one);
 
@@ -67,39 +67,4 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-}
-
-p {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-size: 1.05em;
-    color: #111;
-}
-
-button p {
-    -webkit-user-select: all;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
-}
-
-// button p {
-    // font-weight: bold;
-// }
-
-a {
-    font-weight: bold;
-    color: rgb(18, 109, 245) !important;
-    text-decoration: underline;
-}
-
-strong {
-    font-weight: bolder !important;
-}
 </style>
