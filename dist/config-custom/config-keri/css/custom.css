@@ -1,3 +1,4 @@
+/* Keri */
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -12,6 +13,10 @@ p {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.05em;
   color: #111;
+}
+
+.btn {
+  font-weight: normal;
 }
 
 button p {

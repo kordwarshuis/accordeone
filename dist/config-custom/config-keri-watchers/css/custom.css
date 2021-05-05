@@ -15,6 +15,10 @@ p {
   color: #111;
 }
 
+.btn {
+  font-weight: normal;
+}
+
 button p {
   -webkit-user-select: all;
   -moz-user-select: text;

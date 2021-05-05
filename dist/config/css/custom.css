@@ -1,4 +1,4 @@
-/* Keri Watchers */
+/* Gordian Seal */
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -13,6 +13,10 @@ p {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.05em;
   color: #111;
+}
+
+.btn {
+  font-weight: normal;
 }
 
 button p {
@@ -32,8 +36,9 @@ strong {
   font-weight: bolder !important;
 }
 
+
 .presentation-title {
-  font-size: 3em;
+  font-size: 5em;
 }
 
 .mastheadimage {
